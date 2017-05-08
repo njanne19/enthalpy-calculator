@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Janne's Enthalpy ∆Hº Value* API
+  p This is a RESTful API that accepts a browser request in return for JSON data
+  br 
+  p Example usage: 
+  code localhost:3000/Ca(OH)2(s)
+  p Returns :
+  code {compound: Ca(OH)2(s), enthalpy: -986.1}
+  h6 * note: the data in this API is provided by the <a href="http://bilbo.chm.uri.edu/CHM112/tables/thermtable.htm">The University of Rhode Island</a>

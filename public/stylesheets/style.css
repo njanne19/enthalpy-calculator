@@ -1,8 +1,19 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("http://www.wallpapersonview.com/wallpapers/4/animals_beautiful_sweet_great_funny_cute_cat_background-380.jpg");
 }
 
 a {
   color: #00B7FF;
+}
+
+
+code {
+ font-family: menlo;
+ padding: 2px 4px;
+ font-size: 90%;
+ color: #c7254e;
+ background-color: #f9f2f4;
+ border-radius: 4px;
 }
