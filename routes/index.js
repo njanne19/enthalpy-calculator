@@ -9,10 +9,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:compound', function(req, res, next) {
-
   var compound = req.params.compound;
+  var returnData = data[compound];
 
-  res.json({"compound": compound, enthalpy: data[compound]});
+  if (isNaN(compound[0])==false) {
+    returnData = data[compound.substring(1)]
+    returnData *= Number(compound[0]);
+  }
+
+  res.json({"compound": compound, enthalpy: returnData});
 });
 
 module.exports = router;
